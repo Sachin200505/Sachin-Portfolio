@@ -1,0 +1,69 @@
+section {
+  background-color: transparent;
+}
+
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ index.css or global.css 
+Set background for light and dark themes 
+html {
+  @apply bg-gradient-to-br from-sky-100 to-sky-300 text-slate-800;
+}
+
+html.dark {
+  @apply bg-slate-900 text-slate-100;
+} 
+
+
+:root {
+  --primary-color: #3b82f6; 
+  --secondary-color: #8b5cf6; 
+}
+
+.dark {
+  --primary-color: #8b5cf6; 
+  --secondary-color: #3b82f6; 
+}
+
+html:not(.dark) {
+  background: linear-gradient(to bottom right, #bfedfd, #8fd5fa);
+  color: #1e293b; 
+}
+
+html.dark {
+  background-color: #0f172a; 
+  color: #b4d7fa; 
+}
+
+
+
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌤️ Light Theme: Sea Blue Gradient Background */
+html:not(.dark) {
+  background: linear-gradient(to bottom right, #bfedfd, #8fd5fa);
+  color: #1e293b; /* Tailwind's slate-800 */
+}
+
+/* 🌙 Dark Theme */
+html.dark {
+  background-color: #0f172a; /* Tailwind's slate-900 */
+  color: #f1f5f9;            /* Tailwind's slate-100 */
+}
+
+/* 🌈 CSS Variables for Theme Colors */
+:root {
+  --primary-color: #8fb3ec;    /* Light theme primary */
+  --secondary-color: #5c97f6;  /* Light theme secondary */
+}
+
+html.dark {
+  --primary-color: #6945b1;    /* Dark theme primary */
+  --secondary-color: #8e5fba;  /* Dark theme secondary */
+}
